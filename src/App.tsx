@@ -1,7 +1,17 @@
-import "@mantine/core/styles.css";
-import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
+import React from 'react';
+import { MantineProvider } from '@mantine/core';
+import { theme } from './theme';
+import CropTable from './components/CropTable';
+import AverageYieldTable from './components/AverageTable';
 
-export default function App() {
-  return <MantineProvider theme={theme}>App</MantineProvider>;
-}
+const App: React.FC = () => {
+  return (
+    <MantineProvider theme={theme}>
+      <CropTable />
+      <AverageYieldTable/>
+    </MantineProvider>
+  );
+};
+
+export default App;
+

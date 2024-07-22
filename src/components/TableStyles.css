@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    margin-top: 16px; /* Example margin, adjust as needed */
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid #393939;
+    padding: 8px;
+  }
+  
+  table td {
+    border: 1px solid #393939; /* Light gray border */
+    padding: 8px; /* Padding inside cells */
+  }
+  
+  table th {
+    background-color: #1c1c1c; /* Dark background for header */
+    color: #ffffff; /* Light text color for header */
+    text-align: center;
+  }
+
+
+table tbody tr:nth-of-type(even) {
+    background-color: #bebebe;
+  }
+  
+  table tbody tr:hover {
+    background-color: #e7e7e7;
+  }
+  
+  
